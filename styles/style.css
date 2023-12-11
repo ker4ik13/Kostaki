@@ -138,6 +138,9 @@ body {
   font-size: 24px;
   max-width: 360px;
   border-radius: 10px;
+  color: #000;
+  text-decoration: none;
+  width: 100%;
 }
 
 .follow_me_img {
@@ -527,4 +530,23 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.dog_right {
+  max-width: 464px;
+  width: 100%;
+  transform: translate(50%, 0);
+}
+
+.string {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.title_small_text {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
 }
