@@ -5,18 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../../styles/reset.css" />
     <link rel="stylesheet" href="../../../styles/style.css" />
-    <title>Aleksei Morgunov</title>
+    <title>Mikhail Matiushin</title>
   </head>
   <body>
     <div class="container pb-150">
       <h1 class="paint_title">About artist</h1>
-      <h2 class="paint_author mb-20">Aleksei Morgunov</h2>
-      <img
-        src="../../../images/morgunov.jpg"
-        draggable="false"
-        class="main_img menu_img"
-      />
-      <audio src="" controls class="audio"></audio>
+      <h2 class="paint_author mb-20">Mikhail Matiushin</h2>
+      <div class="relative">
+        <video
+          src="../../../data/comp3.mp4"
+          class="main_img video"
+          controls
+        ></video>
+        <button class="play_button">
+          <img
+            src="../../../images/play_icon.svg"
+            draggable="false"
+            class="play_icon"
+          />
+        </button>
+      </div>
+      <audio
+        src="../../../data/Yann Tiersen La Valse D'amélie.mp3"
+        controls
+        class="audio"
+      ></audio>
       <div class="scroll_text">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -39,5 +52,6 @@
         <a href="../../menu.html" class="button_bottom">Menu</a>
       </div>
     </div>
+    <script src="../../../js/play.js"></script>
   </body>
 </html>

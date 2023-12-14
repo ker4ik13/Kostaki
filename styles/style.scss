@@ -38,10 +38,43 @@ body {
   max-width: 300px;
   width: 100%;
   border-radius: 10px;
-
   &.menu_img {
     @include shadow();
+
+    &.big {
+      max-height: 250px;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: 0%;
+      object-position: 50% 0%;
+    }
   }
+}
+.video {
+  @include shadow-dark();
+
+  &.light-shadow {
+    @include shadow();
+  }
+}
+.play_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: 0.2s;
+  @include shadow();
+
+  &.invisible {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.z-5 {
+  position: relative;
+  z-index: 5;
 }
 .scroll_text {
   max-width: 300px;
@@ -52,6 +85,7 @@ body {
   height: 100%;
   max-height: none;
   text-align: left;
+  position: relative;
 
   & p {
     @include khula();
@@ -74,12 +108,23 @@ body {
     max-height: 100px;
     overflow: hidden;
     text-overflow: ellipsis;
-    background: linear-gradient(
-      0deg,
-      #fff 34.38%,
-      rgba(255, 255, 255, 0.81) 34.38%,
-      rgba(255, 255, 255, 0.38) 158.18%
-    );
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: 5;
+      background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.81) 34.38%,
+        rgba(255, 255, 255, 0.38) 158.18%
+      );
+      height: 60px;
+      width: 100%;
+    }
   }
 }
 .scroll_button_wrapper {
@@ -147,16 +192,19 @@ body {
   position: relative;
   max-width: 400px;
   width: 100%;
-  margin-top: 50px;
+  z-index: 1;
+  margin-top: 30px;
 }
 .image_with_dog {
   border-radius: 10px;
+  @include shadow-dark();
 }
 .dog_from_image {
   position: absolute;
-  bottom: 0;
+  bottom: 20%;
   right: 0;
   z-index: 1;
+  max-width: 130px;
   transform: translate(0, 50%);
 }
 .mt-150 {
@@ -245,7 +293,7 @@ body {
   padding: 20px;
   max-width: 400px;
   width: 100%;
-  font-size: 40px;
+  font-size: 36px;
   @include shadow();
   margin-top: 33px;
   border-radius: 10px;
@@ -257,6 +305,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
+  justify-items: center;
   max-width: 400px;
   width: 100%;
   gap: 20px;
@@ -273,26 +322,32 @@ body {
   flex-direction: column;
   height: 100%;
 }
-.card_img {
+.card_image_wrapper {
   border-radius: 10px;
   max-width: 150px;
   width: 100%;
   max-height: 150px;
   height: 100%;
+  overflow: hidden;
+  @include shadow-dark();
   -o-object-fit: cover;
   object-fit: cover;
-  @include shadow-dark();
+}
+.card_img {
+  -o-object-fit: cover;
+  transform: scale(1.1);
+  object-fit: cover;
 }
 .card_title {
   margin-top: 15px;
   @include karma();
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1;
 }
 .card_author {
   color: #949393;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 700;
   @include khula();
 }
@@ -360,6 +415,8 @@ body {
 }
 .img_with_game {
   position: relative;
+  max-width: 300px;
+  width: 100%;
 }
 .relative {
   position: relative;
@@ -370,6 +427,10 @@ body {
   right: -35px;
   z-index: 2;
   text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .game_img {
   max-width: 100px;
@@ -388,13 +449,13 @@ body {
   @include khula();
   font-weight: 700;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 16px;
 }
 .audio {
   max-width: 400px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 14px;
 }
 .dog_on_button {
   position: absolute;
@@ -467,6 +528,18 @@ body {
   object-fit: cover;
   width: 100%;
   max-width: 350px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  &.big {
+    max-height: 250px;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 50% 0%;
+    object-position: 50% 0%;
+  }
 }
 .swiper_card {
   display: flex;

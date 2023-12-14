@@ -11,7 +11,16 @@
     <div class="container pb-100">
       <h2 class="top_text">MAIT</h2>
       <h1 class="main_title">Museum Kostaki</h1>
-      <img src="./images/main_dog.png" draggable="false" class="main_img" />
+      <div class="relative">
+        <video src="./data/comp1.mp4" class="main_img video" controls></video>
+        <button class="play_button">
+          <img
+            src="./images/play_icon.svg"
+            draggable="false"
+            class="play_icon"
+          />
+        </button>
+      </div>
       <div class="scroll_text hidden">
         <p>
           Good afternoon My name is Lara, I am the caretaker of this museum. My
@@ -48,5 +57,6 @@
       </div>
     </div>
     <script src="./js/script.js"></script>
+    <script src="./js/play.js"></script>
   </body>
 </html>
