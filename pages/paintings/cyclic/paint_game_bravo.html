@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../../styles/reset.css" />
     <link rel="stylesheet" href="../../../styles/style.css" />
-    <title>Dynamic city</title>
+    <title>Cyclic construction</title>
   </head>
   <body>
     <div class="container pb-150">
-      <div class="img_with_game mt-20">
-        <img
-          src="../../../images/card4_1.jpg"
-          draggable="false"
-          class="main_img menu_img"
-        />
-        <a href="./paint_game_start.html" class="game_link">
+      <h1 class="paint_title">BRAVO!</h1>
+      <h2 class="paint_author mb-20">Ivan Kliun</h2>
+      <div class="relative">
+        <video
+          src="../../../data/comp3.mp4"
+          class="main_img video"
+          controls
+        ></video>
+        <button class="play_button">
           <img
-            src="../../../images/game.svg"
+            src="../../../images/play_icon.svg"
             draggable="false"
-            class="game_img"
+            class="play_icon"
           />
-        </a>
+        </button>
       </div>
-      <h1 class="paint_title">Dynamic city</h1>
-      <h2 class="paint_author">Gustav Klucis</h2>
       <audio src="../../../data/audio1.mp3" controls class="audio"></audio>
       <div class="scroll_text hidden">
         <p>
@@ -46,20 +46,8 @@
       <div class="scroll_button_wrapper">
         <button type="button" class="scroll_button">continue...</button>
       </div>
-      <div class="vertical_buttons relative mt-100">
-        <img
-          src="../../../images/dog_loading.png"
-          draggable="false"
-          class="dog_on_button"
-        />
-        <a href="./paint_artist.html" class="full_button">About artist</a>
-        <a href="./paint_legends.html" class="full_button">Legends</a>
-        <a href="./paint_other.html" class="full_button"
-          >Other paintings of this artist</a
-        >
-      </div>
       <div class="buttons_wrapper mt-100 fixed_buttons">
-        <a href="../../menu.html" class="button_bottom">Back</a>
+        <a href="./paint_menu.html" class="button_bottom">Back</a>
         <a href="../../menu.html" class="button_bottom">Menu</a>
       </div>
     </div>
