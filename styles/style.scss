@@ -471,6 +471,9 @@ body {
   width: 100%;
   margin-top: 10px;
 }
+.god_on_button_image {
+  position: relative;
+}
 .dog_on_button {
   position: absolute;
   top: 0;
@@ -478,6 +481,9 @@ body {
   z-index: 1;
   transform: translate(0, -80%);
   max-width: 170px;
+
+  &:before {
+  }
 }
 .swiper {
   width: 100%;
