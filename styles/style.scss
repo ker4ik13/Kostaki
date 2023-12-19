@@ -39,6 +39,10 @@ body {
   width: 100%;
   border-radius: 10px;
 
+  &.mini {
+    max-width: 177px;
+  }
+
   &.menu_img {
     @include shadow();
     max-height: 228px;
@@ -278,12 +282,13 @@ body {
   }
 }
 .button_bottom {
-  padding: 8px 30px;
-  border-radius: 16px;
+  padding: 4px 25px;
+  padding-top: 7px;
+  border-radius: 50px;
   @include shadow();
   @include karma();
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
   text-transform: uppercase;
   background-color: #fff;
@@ -430,9 +435,17 @@ body {
 }
 .img_with_game {
   position: relative;
-  max-width: 300px;
+  max-width: 200px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+
+  & .menu_img {
+    max-height: 120px;
+
+    &.big {
+      max-height: 150px;
+    }
+  }
 }
 .relative {
   position: relative;
@@ -454,7 +467,7 @@ body {
 }
 .paint_title {
   @include karma();
-  font-size: 40px;
+  font-size: 20px;
   line-height: 1.15;
   font-weight: 500;
   text-align: center;
@@ -464,7 +477,7 @@ body {
   @include khula();
   font-weight: 700;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
 }
 .audio {
   max-width: 400px;
