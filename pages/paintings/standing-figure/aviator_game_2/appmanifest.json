@@ -1,11 +1,11 @@
 {
 	"name": "Aviator",
 	"short_name": "Aviator",
-	"description": "",
+	"description": "desc",
 	"start_url": "index.html",
 	"display": "fullscreen",
-	"orientation": "landscape",
-	"background_color": "#ffffff",
+	"orientation": "portrait",
+	"background_color": "#977d64",
 	"icons": [
 		{
 			"src": "icons/icon-16.png",
@@ -38,5 +38,5 @@
 			"type": "image/png"
 		}
 	],
-	"theme_color": "#ffffff"
+	"theme_color": "#977d64"
 }

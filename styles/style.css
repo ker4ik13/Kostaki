@@ -38,6 +38,11 @@ body {
   margin-top: 10px;
 }
 
+.mini-dog {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
 .main_img {
   max-width: 300px;
   width: 100%;
@@ -51,14 +56,15 @@ body {
   max-height: 228px;
   -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+  height: 100%;
 }
 .main_img.menu_img.big {
-  max-height: 250px;
-  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: 0%;
-  object-position: 50% 0%;
+  object-position: 0% 0%;
 }
 
 .video {
@@ -177,8 +183,36 @@ body {
   border-radius: 10px;
   width: 100%;
   font-size: 20px;
+  transition: background-color 0.2s;
+}
+.error-animation {
+  animation: shake 0.3s linear;
 }
 
+.error {
+  background-color: rgb(217, 55, 55);
+}
+@keyframes shake {
+  0% {
+    background-color: rgb(217, 55, 55);
+    margin-left: 0rem;
+  }
+  20% {
+    margin-left: 1rem;
+  }
+  40% {
+    margin-left: -1rem;
+  }
+  60% {
+    margin-left: 1rem;
+  }
+  80% {
+    margin-left: -1rem;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
 .title {
   font-family: "Karma";
   cursor: text;
@@ -483,9 +517,6 @@ body {
 .img_with_game .menu_img {
   max-height: 120px;
 }
-.img_with_game .menu_img.big {
-  max-height: 150px;
-}
 
 .relative {
   position: relative;
@@ -693,4 +724,8 @@ body {
   100% {
     transform: translateX(0) translateY(0);
   }
+}
+.bravo-title {
+  font-size: 16px !important;
+  font-weight: 700;
 }
