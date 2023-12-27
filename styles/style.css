@@ -794,4 +794,6 @@ body {
 .center-top {
   -o-object-position: 50% 35% !important;
   object-position: 50% 35% !important;
+  height: 140px !important;
+  max-height: 140px !important;
 }
