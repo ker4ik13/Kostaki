@@ -737,3 +737,30 @@ body {
 	font-size: 16px !important;
 	font-weight: 700;
 }
+.big_title {
+	@include karma();
+	font-weight: 500;
+	color: #000;
+	font-size: 40px;
+	margin-top: 20px;
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.horizontal-revert {
+	transform: scaleX(-1);
+}
+.result_image {
+	@include shadow-dark();
+	padding: 30px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.result_img {
+	border-radius: 10px;
+}
