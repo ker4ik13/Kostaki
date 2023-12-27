@@ -790,3 +790,8 @@ body {
 .mt-400 {
   margin-top: 400px;
 }
+
+.center-top {
+  -o-object-position: 50% 35% !important;
+  object-position: 50% 35% !important;
+}
