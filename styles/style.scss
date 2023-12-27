@@ -181,9 +181,8 @@ body {
 	width: 100%;
 	font-size: 20px;
 	transition: background-color 0.2s;
-
-	&.error-button {
-	}
+	color: #000;
+	text-decoration: none;
 }
 .error-animation {
 	-webkit-animation: shake 0.3s linear;
