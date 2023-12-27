@@ -183,6 +183,7 @@ body {
   border-radius: 10px;
   width: 100%;
   font-size: 20px;
+  background-color: #fff;
   transition: background-color 0.2s;
   color: #000;
   text-decoration: none;
@@ -577,6 +578,7 @@ body {
   transform: translate(0, -80%);
   max-width: 170px;
 }
+
 .swiper {
   width: 100%;
   min-height: 300px;
@@ -764,4 +766,27 @@ body {
 
 .result_img {
   border-radius: 10px;
+}
+
+.center {
+  -o-object-position: 50% 50% !important;
+  object-position: 50% 50% !important;
+}
+
+.bg-zoom {
+  background-image: url("../images/zoom.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.bg-city {
+  background-image: url("../images/dynamic_city_time.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.mt-400 {
+  margin-top: 400px;
 }
