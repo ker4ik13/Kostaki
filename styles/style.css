@@ -797,3 +797,10 @@ body {
   height: 140px !important;
   max-height: 140px !important;
 }
+
+.center-top150 {
+  -o-object-position: 50% 35% !important;
+  object-position: 50% 35% !important;
+  height: 150px !important;
+  max-height: 150px !important;
+}
