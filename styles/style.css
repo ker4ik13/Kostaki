@@ -780,6 +780,13 @@ body {
   min-height: 100vh;
 }
 
+.bg-aviator {
+  background-image: url("../images/aviator_picture.webp");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
 .bg-city {
   background-image: url("../images/dynamic_city_time.jpg");
   background-size: cover;
