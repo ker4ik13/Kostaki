@@ -1,1 +1,0 @@
-../paint_game_end.html

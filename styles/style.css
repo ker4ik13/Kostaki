@@ -2,9 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karma:wght@500;700&display=swap");
 /* ОСНОВНЫЕ СТИЛИ */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Khula";
   color: #000;
+  scroll-behavior: smooth;
 }
 
 .overflow {
@@ -82,10 +87,43 @@ body {
   z-index: 1;
   transition: 0.2s;
   box-shadow: 0px 4px 25px 0px rgba(72, 72, 72, 0.25);
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .play_button.invisible {
   visibility: hidden;
   opacity: 0;
+}
+.play_button.move {
+  animation: moveButton 1s ease-in-out infinite;
+}
+@keyframes moveButton {
+  0% {
+    margin-left: 0rem;
+  }
+  20% {
+    margin-left: 0.5rem;
+  }
+  40% {
+    margin-left: -0.5rem;
+  }
+  60% {
+    margin-left: 0.5rem;
+  }
+  80% {
+    margin-left: -0.5rem;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+.play_icon {
+  background-color: transparent;
 }
 
 .z-5 {
@@ -113,11 +151,15 @@ body {
   z-index: 2;
 }
 .scroll_text img {
-  margin: 40px auto;
+  margin: 30px auto;
   max-width: 320px;
   width: 100%;
   border-radius: 10px;
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.42);
+}
+.scroll_text img.play_icon {
+  margin: 0;
+  border-radius: 100px;
 }
 .scroll_text.hidden {
   transition: 0.2s ease-in-out;
@@ -526,6 +568,10 @@ body {
   position: relative;
 }
 
+.red-border {
+  outline: 0.2rem solid red;
+}
+
 .game_link {
   position: absolute;
   top: -35px;
@@ -535,6 +581,7 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .game_img {

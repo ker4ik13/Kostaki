@@ -4,10 +4,13 @@
 @import './vars';
 
 /* ОСНОВНЫЕ СТИЛИ */
-
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: 'Khula';
 	color: #000;
+	scroll-behavior: smooth;
 }
 .overflow {
 	overflow: hidden;
@@ -79,11 +82,68 @@ body {
 	z-index: 1;
 	transition: 0.2s;
 	@include shadow();
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
 
 	&.invisible {
 		visibility: hidden;
 		opacity: 0;
 	}
+
+	&.move {
+		-webkit-animation: moveButton 1s ease-in-out infinite;
+		animation: moveButton 1s ease-in-out infinite;
+	}
+}
+@-webkit-keyframes moveButton {
+	0% {
+		margin-left: 0rem;
+	}
+	20% {
+		margin-left: 0.5rem;
+	}
+	40% {
+		margin-left: -0.5rem;
+	}
+	60% {
+		margin-left: 0.5rem;
+	}
+	80% {
+		margin-left: -0.5rem;
+	}
+	100% {
+		margin-left: 0;
+	}
+}
+@keyframes moveButton {
+	0% {
+		margin-left: 0rem;
+	}
+	20% {
+		margin-left: 0.5rem;
+	}
+	40% {
+		margin-left: -0.5rem;
+	}
+	60% {
+		margin-left: 0.5rem;
+	}
+	80% {
+		margin-left: -0.5rem;
+	}
+	100% {
+		margin-left: 0;
+	}
+}
+
+.play_icon {
+	background-color: transparent;
 }
 .z-5 {
 	position: relative;
@@ -109,11 +169,16 @@ body {
 	}
 
 	& img {
-		margin: 40px auto;
+		margin: 30px auto;
 		max-width: 320px;
 		width: 100%;
 		border-radius: 10px;
 		@include shadow-dark();
+
+		&.play_icon {
+			margin: 0;
+			border-radius: 100px;
+		}
 	}
 
 	&.hidden {
@@ -504,6 +569,9 @@ body {
 .relative {
 	position: relative;
 }
+.red-border {
+	outline: 0.2rem solid red;
+}
 .game_link {
 	position: absolute;
 	top: -35px;
@@ -514,6 +582,7 @@ body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	-webkit-tap-highlight-color: transparent;
 }
 .game_img {
 	max-width: 100px;
