@@ -152,20 +152,22 @@
 				<a href="./paint_game_start.html" class="button_bottom">Back</a>
 			</div>
 		</div>
-		<script>
-			const slide11 = document.getElementById('slide-11');
+		<script defer>
+			setTimeout(() => {
+				const slide11 = document.getElementById('slide-11');
 
-			// Method 1: Using scrollIntoView()
-			slide11.scrollIntoView({
-				behavior: 'smooth',
-			});
+				// Method 1: Using scrollIntoView()
+				slide11.scrollIntoView({
+					behavior: 'smooth',
+				});
 
-			// Method 2: Using window.scrollTo()
-			const offsetTop = slide11.offsetTop;
-			window.scrollTo({
-				top: offsetTop,
-				behavior: 'smooth',
-			});
+				// Method 2: Using window.scrollTo()
+				const offsetTop = slide11.offsetTop;
+				window.scrollTo({
+					top: offsetTop,
+					behavior: 'smooth',
+				});
+			}, 1000);
 		</script>
 		<!-- <script>
 			const slide11 = document.getElementById('slide-11');
