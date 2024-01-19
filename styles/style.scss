@@ -15,6 +15,19 @@ body {
 .overflow {
 	overflow: hidden;
 }
+.transparent {
+	background-color: transparent !important;
+}
+.screen_bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	-o-object-fit: cover;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
 .container {
 	text-align: center;
 	display: flex;
@@ -182,6 +195,7 @@ body {
 	}
 
 	&.hidden {
+		@include strings(4);
 		transition: 0.2s ease-in-out;
 		max-height: 100px;
 		overflow: hidden;
@@ -202,6 +216,12 @@ body {
 			);
 			height: 60px;
 			width: 100%;
+		}
+	}
+
+	&.not-hidden {
+		&::before {
+			background: transparent;
 		}
 	}
 }
@@ -638,6 +658,10 @@ body {
 	background-position: center center;
 	cursor: pointer;
 	z-index: 20;
+
+	&.lower {
+		top: 480px;
+	}
 }
 .my_button_next {
 	background-color: #000;
@@ -656,6 +680,10 @@ body {
 	transform: rotate(180deg);
 	cursor: pointer;
 	z-index: 20;
+
+	&.lower {
+		top: 480px;
+	}
 }
 .swiper-pagination {
 	top: 335px !important;
@@ -671,6 +699,10 @@ body {
 			background-color: #000;
 		}
 	}
+
+	&.lower {
+		top: 500px !important;
+	}
 }
 .swiper_image {
 	border-radius: 10px;
@@ -681,9 +713,15 @@ body {
 	object-fit: cover;
 	width: 100%;
 	max-width: 350px;
-	position: -webkit-sticky;
-	position: sticky;
 	top: 0;
+
+	&.full {
+		width: 100%;
+	}
+
+	&.auto {
+		width: auto;
+	}
 
 	&.big {
 		max-height: 250px;
@@ -811,6 +849,10 @@ body {
 	font-size: 30px;
 	margin-top: 10px;
 	text-align: center;
+
+	&.white {
+		color: #fff;
+	}
 }
 .text-left {
 	text-align: left;

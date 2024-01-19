@@ -16,6 +16,21 @@ body {
   overflow: hidden;
 }
 
+.transparent {
+  background-color: transparent !important;
+}
+
+.screen_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .container {
   text-align: center;
   display: flex;
@@ -162,6 +177,14 @@ body {
   border-radius: 100px;
 }
 .scroll_text.hidden {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  box-orient: vertical;
   transition: 0.2s ease-in-out;
   max-height: 100px;
   overflow: hidden;
@@ -177,6 +200,9 @@ body {
   background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.81) 34.38%, rgba(255, 255, 255, 0.38) 158.18%);
   height: 60px;
   width: 100%;
+}
+.scroll_text.not-hidden::before {
+  background: transparent;
 }
 
 .scroll_button_wrapper {
@@ -648,6 +674,9 @@ body {
   cursor: pointer;
   z-index: 20;
 }
+.my_button_prev.lower {
+  top: 480px;
+}
 
 .my_button_next {
   background-color: #000;
@@ -667,6 +696,9 @@ body {
   cursor: pointer;
   z-index: 20;
 }
+.my_button_next.lower {
+  top: 480px;
+}
 
 .swiper-pagination {
   top: 335px !important;
@@ -682,6 +714,9 @@ body {
 .swiper-pagination span.swiper-pagination-bullet-active {
   background-color: #000;
 }
+.swiper-pagination.lower {
+  top: 500px !important;
+}
 
 .swiper_image {
   border-radius: 10px;
@@ -692,8 +727,13 @@ body {
   object-fit: cover;
   width: 100%;
   max-width: 350px;
-  position: sticky;
   top: 0;
+}
+.swiper_image.full {
+  width: 100%;
+}
+.swiper_image.auto {
+  width: auto;
 }
 .swiper_image.big {
   max-height: 250px;
@@ -790,6 +830,9 @@ body {
   font-size: 30px;
   margin-top: 10px;
   text-align: center;
+}
+.big_title.white {
+  color: #fff;
 }
 
 .text-left {
