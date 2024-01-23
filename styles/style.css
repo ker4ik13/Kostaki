@@ -738,6 +738,12 @@ body {
 .my_button_prev.lower {
   top: 480px;
 }
+.my_button_prev.low {
+  top: auto;
+  position: fixed;
+  left: 20px;
+  bottom: 200px !important;
+}
 
 .my_button_next {
   background-color: #000;
@@ -759,6 +765,12 @@ body {
 }
 .my_button_next.lower {
   top: 480px;
+}
+.my_button_next.low {
+  top: auto;
+  position: fixed;
+  right: 20px;
+  bottom: 200px !important;
 }
 
 .swiper-pagination {

@@ -725,6 +725,13 @@ body {
 	&.lower {
 		top: 480px;
 	}
+
+	&.low {
+		top: auto;
+		position: fixed;
+		left: 20px;
+		bottom: 200px !important;
+	}
 }
 .my_button_next {
 	background-color: #000;
@@ -747,6 +754,13 @@ body {
 	&.lower {
 		top: 480px;
 	}
+
+	&.low {
+		top: auto;
+		position: fixed;
+		right: 20px;
+		bottom: 200px !important;
+	}
 }
 .swiper-pagination {
 	top: 335px !important;
@@ -767,6 +781,7 @@ body {
 		top: 500px !important;
 	}
 }
+
 .swiper_image {
 	border-radius: 10px;
 	margin-bottom: 150px;
