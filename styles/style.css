@@ -415,6 +415,7 @@ body {
 
 .modal {
   height: 0;
+  width: 0;
   overflow: hidden;
   transition: opacity 0.2s, visibility 0.2s;
   opacity: 0;
@@ -465,6 +466,7 @@ body {
   background-color: #fff;
   -webkit-tap-highlight-color: transparent;
   transition: 0.1s;
+  color: #000;
 }
 .button_bottom:active {
   background-color: #e6e6e6;
