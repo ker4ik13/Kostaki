@@ -86,9 +86,14 @@ body {
   -o-object-position: 0%;
   object-position: 0% 0%;
 }
+.main_img.menu_img.costaki {
+  max-width: 120px;
+}
 .main_img.menu_img.full {
   max-width: none;
-  max-height: 200px;
+  max-height: 400px;
+  -o-object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -642,6 +647,9 @@ body {
 .img_with_game .menu_img {
   max-height: 120px;
 }
+.img_with_game.full {
+  max-width: 350px;
+}
 
 .relative {
   position: relative;
@@ -801,6 +809,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.swiper_card.full-h {
+  min-height: 80vh;
 }
 
 .dog_right {
