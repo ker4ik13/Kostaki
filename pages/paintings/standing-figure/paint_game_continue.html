@@ -16,22 +16,32 @@
 				class="full-video"
 				poster="../../../images/aviator_picture.webp"
 			></video>
+			<div class="play_button opacity">
+				<img src="../../../images/play_icon.svg" alt="" />
+			</div>
 			<div class="buttons_wrapper mt-100 fixed_buttons game_buttons">
 				<a href="./paint_game_start.html" class="button_bottom">Back</a>
 				<a href="./paint_game_levels.html" class="button_bottom">Next</a>
 			</div>
 		</div>
-		<!-- <script type="text/javascript" defer>
-			const pageName = 'paint_game_continue.html';
-			const currentPath = window.location.pathname;
-			const newPage = `paint_game_levels.html`;
+		<script type="text/javascript">
+			const playButton = document.querySelector('.play_button');
+			const video = document.querySelector('video');
 
-			const newPath = currentPath.replace(pageName, newPage);
+			playButton.addEventListener('click', () => {
+				video.play();
 
-			setTimeout(function () {
-				var newPath = currentPath.replace(pageName, newPage);
-				window.location.href = newPath;
-			}, 9 * 1000);
-		</script> -->
+				const pageName = 'paint_game_continue.html';
+				const currentPath = window.location.pathname;
+				const newPage = `paint_game_levels.html`;
+
+				const newPath = currentPath.replace(pageName, newPage);
+
+				setTimeout(function () {
+					var newPath = currentPath.replace(pageName, newPage);
+					window.location.href = newPath;
+				}, 9 * 1000);
+			});
+		</script>
 	</body>
 </html>
