@@ -1014,3 +1014,15 @@ body {
 	height: 150px !important;
 	max-height: 150px !important;
 }
+.maw-300 {
+	max-width: 300px;
+}
+button[data-vote='no'] {
+	background-color: rgb(217, 129, 129);
+}
+button[data-vote='yes'] {
+	background-color: rgb(136, 219, 145);
+}
+a[data-vote='yes'] {
+	background-color: rgb(136, 219, 145);
+}

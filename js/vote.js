@@ -7,10 +7,10 @@ const swiper = new Swiper('.swiper');
 // Варианты ответов:
 
 // Картина авангарда, пользователь ответил Да
-// Right! This is a picture Название картины of Имя художника !
+// Hooray! This is a picture Название картины of Имя художника !
 
 // Картина авангарда, пользователь ответил Нет
-// Wrong! This is a picture Название картины of Имя художника !
+// Oh! it's a pity, it was a painting"...." it would have been perfect for Costakis' collection.
 
 // Картина не авангарда, пользователь ответил Да
 // Wrong! This is a picture Название картины of Имя художника !
@@ -35,14 +35,23 @@ const toggleModal = () => {
 	modal.classList.toggle('open');
 };
 
-closeButton.addEventListener('click', toggleModal);
+closeButton.addEventListener('click', () => {
+	toggleModal();
+	swiper.slideNext();
+});
 
 const checkAnswer = (button) => {
-	if (button.value === 'false') {
-		modalText.textContent = `Wrong! This is a picture ${button.dataset.paint} of ${button.dataset.author} !`;
+	if (button.value === 'true' && button.dataset.vote === 'yes') {
+		modalText.textContent = `Hooray! This is a picture "${button.dataset.paint}" of ${button.dataset.author} !`;
 		toggleModal();
-	} else {
-		swiper.slideNext();
-		// modalText.textContent = `Right! This is a picture ${button.dataset.paint} of ${button.dataset.author} !`;
+	} else if (button.value === 'true' && button.dataset.vote === 'no') {
+		modalText.textContent = `Correct! This is a picture "${button.dataset.paint}" of ${button.dataset.author}! We don't need it here.`;
+		toggleModal();
+	} else if (button.value === 'false' && button.dataset.vote === 'yes') {
+		modalText.textContent = `Wrong! This is a picture "${button.dataset.paint}" of ${button.dataset.author} !`;
+		toggleModal();
+	} else if (button.value === 'false' && button.dataset.vote === 'no') {
+		modalText.textContent = `Oh! it's a pity, it was a painting "${button.dataset.paint}" it would have been perfect for Costakis' collection.`;
+		toggleModal();
 	}
 };
