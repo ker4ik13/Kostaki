@@ -67,7 +67,9 @@ body {
 	}
 
 	&.artist {
-		max-height: 200px;
+		max-height: 300px;
+		-o-object-position: 50% 0;
+		object-position: 50% 0;
 	}
 
 	&.menu_img {
