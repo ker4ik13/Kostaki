@@ -66,6 +66,10 @@ body {
 		max-width: 177px;
 	}
 
+	&.artist {
+		max-height: 200px;
+	}
+
 	&.menu_img {
 		@include shadow();
 		max-height: 228px;
