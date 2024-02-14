@@ -4141,6 +4141,7 @@ self.C3_JsPropNameTable = [
 	{solomon_nikritin__man_and_cloud: 0},
 	{Fade: 0},
 	{shablon_podstanovka_bg: 0},
+	{shildik: 0},
 	{touch_part: 0},
 	{url: 0}
 ];
@@ -4158,7 +4159,8 @@ self.InstanceType = {
 	Sprite2: class extends self.ISpriteInstance {},
 	pose1_lara: class extends self.ISpriteInstance {},
 	solomon_nikritin__man_and_cloud: class extends self.ISpriteInstance {},
-	shablon_podstanovka_bg: class extends self.ISpriteInstance {}
+	shablon_podstanovka_bg: class extends self.ISpriteInstance {},
+	shildik: class extends self.ISpriteInstance {}
 }
 }
 
