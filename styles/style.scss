@@ -1032,3 +1032,65 @@ button[data-vote='yes'] {
 a[data-vote='yes'] {
 	background-color: rgb(136, 219, 145);
 }
+.two_artists {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	gap: 30px;
+	max-width: 300px;
+	margin: 0 auto;
+}
+.two_artists_artist {
+	max-width: 120px;
+	width: 100%;
+}
+.swiper_artist_image {
+	width: 100%;
+	max-width: 120px;
+	max-height: 120px;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: 50% 0%;
+	object-position: 50% 0%;
+}
+.swiper_artists {
+	max-width: 120px;
+	min-height: 0;
+	margin: 0;
+}
+.skobka {
+	transform: rotate(90deg) translate(0, 15%);
+	font-size: 120px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	line-height: 1;
+
+	& p {
+		text-align: center;
+	}
+}
+.ask_art {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	height: 200px;
+	aspect-ratio: 1/1;
+	border: 3px solid black;
+	border-radius: 6px;
+	font-size: 100px;
+	line-height: 1;
+}
+.dog_right_abs {
+	position: absolute;
+	right: -320px;
+	top: -150px;
+	z-index: 1;
+	max-width: 400px;
+}
