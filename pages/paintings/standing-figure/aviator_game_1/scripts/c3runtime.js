@@ -5756,7 +5756,8 @@ self.C3_JsPropNameTable = [
 	{Labirintgot: 0},
 	{TiledBackground_lvl1: 0},
 	{start: 0},
-	{url: 0}
+	{url: 0},
+	{url2: 0}
 ];
 
 self.InstanceType = {
@@ -5900,6 +5901,7 @@ self.C3_ExpressionFuncs = [
 		},
 		() => 1,
 		() => "ur",
+		() => "ur2",
 		() => "Движение самолета",
 		() => -6000,
 		() => 0,

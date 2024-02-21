@@ -883,6 +883,23 @@ body {
   -moz-user-select: none;
   user-select: none;
 }
+
+.finger_animate_touch {
+  max-width: 50px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  animation: fingerTouch 3s ease-in-out infinite;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.finger_animate_touch.center {
+  left: 50%;
+}
 @keyframes fingerSwipe {
   0% {
     transform: translateX(0) translateY(0);
@@ -916,6 +933,23 @@ body {
   }
   100% {
     transform: translateX(0) translateY(0);
+  }
+}
+@keyframes fingerTouch {
+  0% {
+    transform: scale(100%);
+  }
+  40% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(130%);
+  }
+  60% {
+    transform: scale(80%);
+  }
+  100% {
+    transform: scale(100%);
   }
 }
 .bravo-title {
@@ -1087,4 +1121,43 @@ a[data-vote=yes] {
   top: -150px;
   z-index: 1;
   max-width: 400px;
+}
+
+.mini_airplane {
+  max-width: 200px;
+  align-self: flex-start;
+  margin: 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.virus_1 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 0;
+  max-width: 70px;
+  transform: translate(0, -50%);
+}
+
+.dust_1 {
+  position: absolute;
+  max-width: 180px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(0, -50%);
+  animation: dustSpray 1s ease-in-out infinite;
+}
+@keyframes dustSpray {
+  0% {
+    transform: translate(0, -50%);
+  }
+  100% {
+    transform: translate(100px, -50%);
+  }
 }

@@ -5755,7 +5755,8 @@ self.C3_JsPropNameTable = [
 	{Kletka: 0},
 	{Labirintgot: 0},
 	{start: 0},
-	{url: 0}
+	{url: 0},
+	{url2: 0}
 ];
 
 self.InstanceType = {
@@ -5946,6 +5947,7 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
 		},
+		() => "ur2",
 		() => "Движение самолета2",
 		() => -6000,
 		() => -5736,
