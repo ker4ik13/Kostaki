@@ -1040,11 +1040,10 @@ a[data-vote=yes] {
 .swiper_artist_image {
   width: 100%;
   max-width: 120px;
+  height: 100%;
   max-height: 120px;
   -o-object-fit: cover;
   object-fit: cover;
-  -o-object-position: 50% 0%;
-  object-position: 50% 0%;
 }
 
 .swiper_artists {
@@ -1054,7 +1053,7 @@ a[data-vote=yes] {
 }
 
 .skobka {
-  transform: rotate(90deg) translate(0, 15%);
+  transform: rotate(90deg) translate(0, 10%);
   font-size: 120px;
   text-align: center;
   display: flex;
@@ -1069,15 +1068,16 @@ a[data-vote=yes] {
 }
 
 .ask_art {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   aspect-ratio: 1/1;
   border: 3px solid black;
   border-radius: 6px;
-  font-size: 100px;
+  font-size: 60px;
   line-height: 1;
 }
 
