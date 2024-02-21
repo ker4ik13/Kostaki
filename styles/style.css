@@ -679,6 +679,10 @@ body {
   outline: 0.2rem solid red;
 }
 
+.maw-300 {
+  max-width: 300px;
+}
+
 .game_link {
   position: absolute;
   top: -35px;
@@ -1096,6 +1100,7 @@ a[data-vote=yes] {
   width: 100%;
   height: auto;
   line-height: 1;
+  margin-top: -30px;
 }
 .skobka p {
   text-align: center;
@@ -1113,6 +1118,7 @@ a[data-vote=yes] {
   border-radius: 6px;
   font-size: 60px;
   line-height: 1;
+  margin-top: -30px;
 }
 
 .dog_right_abs {
@@ -1160,4 +1166,10 @@ a[data-vote=yes] {
   100% {
     transform: translate(100px, -50%);
   }
+}
+.double_images {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
