@@ -751,7 +751,7 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 320px;
+  top: 520px;
   left: 0;
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
@@ -760,13 +760,17 @@ body {
   z-index: 20;
 }
 .my_button_prev.lower {
-  top: 480px;
+  top: 520px;
 }
 .my_button_prev.low {
   top: auto;
   position: fixed;
   left: 20px;
   bottom: 200px !important;
+}
+
+.swiper-wrapper.mb-100 {
+  margin-bottom: 200px !important;
 }
 
 .my_button_next {
@@ -778,7 +782,7 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 320px;
+  top: 520px;
   right: 0;
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
@@ -788,7 +792,7 @@ body {
   z-index: 20;
 }
 .my_button_next.lower {
-  top: 480px;
+  top: 520px;
 }
 .my_button_next.low {
   top: auto;
@@ -798,7 +802,7 @@ body {
 }
 
 .swiper-pagination {
-  top: 335px !important;
+  top: 540px !important;
   bottom: auto !important;
 }
 .swiper-pagination span {
@@ -812,18 +816,20 @@ body {
   background-color: #000;
 }
 .swiper-pagination.lower {
-  top: 500px !important;
+  top: 540px !important;
 }
 
 .swiper_image {
   border-radius: 10px;
-  margin-bottom: 150px;
-  max-height: 250px;
+  overflow: hidden;
+  margin-bottom: 100px;
+  max-height: 380px;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
-  max-width: 350px;
+  padding-left: 5px;
+  padding-right: 5px;
   top: 0;
 }
 .swiper_image.full {
@@ -848,6 +854,10 @@ body {
 }
 .swiper_card.full-h {
   min-height: 80vh;
+}
+.swiper_card .paint_title {
+  position: absolute;
+  bottom: 0;
 }
 
 .dog_right {
