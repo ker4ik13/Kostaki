@@ -11,7 +11,7 @@
       - paint_menu.html – меню картины
       - paint_legends.html – Legends
       - paint_artist.html – About artist
-      - paint_other.html – Other paintings of this artist
+      - paint_other.html – Other works of this artist
       - paint_game_start.html – Стартовый экран для игры
       - paint_game_continue.html – Следующий экран
       - paint_game_levels.html – Уровни игры, если есть
