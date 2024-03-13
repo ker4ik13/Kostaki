@@ -1214,3 +1214,29 @@ a[data-vote='yes'] {
 	align-items: center;
 	justify-content: center;
 }
+.walking_dog {
+	position: absolute;
+	bottom: -20%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	-webkit-animation: walking-dog 8s linear infinite;
+	animation: walking-dog 8s linear infinite;
+}
+
+@-webkit-keyframes walking-dog {
+	0% {
+		transform: translate(100%, 0);
+	}
+	100% {
+		transform: translate(-200%, 0);
+	}
+}
+
+@keyframes walking-dog {
+	0% {
+		transform: translate(100%, 0);
+	}
+	100% {
+		transform: translate(-200%, 0);
+	}
+}
