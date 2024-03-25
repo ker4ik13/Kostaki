@@ -9,8 +9,8 @@
   - paintings/ – все картины
     - название_картины/
       - paint_menu.html – меню картины
-      - paint_legends.html – Legends
-      - paint_artist.html – About artist
+      - paint_legends.html – Stories & Legends
+      - paint_artist.html – About the artist
       - paint_other.html – Other works of this artist
       - paint_game_start.html – Стартовый экран для игры
       - paint_game_continue.html – Следующий экран
