@@ -1122,8 +1122,8 @@ a[data-vote=yes] {
   align-items: center;
   justify-content: center;
   aspect-ratio: 1/1;
-  min-width: 150px;
-  min-height: 150px;
+  min-width: 100px;
+  min-height: 100px;
   border: 3px solid black;
   border-radius: 6px;
   font-size: 60px;
