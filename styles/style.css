@@ -47,6 +47,29 @@ body {
   padding-top: 30px;
 }
 
+.languages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.language_select {
+  font-family: "Karma";
+  cursor: text;
+  font-size: 16px;
+  color: #000;
+}
+.language_select.active {
+  color: red;
+}
+
 .top_text {
   font-size: 20px;
   font-family: "Karma";
@@ -584,6 +607,7 @@ body {
   font-weight: 700;
   font-family: "Khula";
   cursor: text;
+  text-transform: capitalize;
 }
 
 .mah100vh {
