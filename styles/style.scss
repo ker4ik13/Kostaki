@@ -48,19 +48,38 @@ body {
 	justify-content: center;
 	gap: 6px;
 	position: absolute;
-	top: 50px;
-	left: 20px;
+	top: 10px;
+	left: 10px;
 	background-color: #fff;
 	padding: 10px;
 	border-radius: 8px;
 }
 .language_select {
 	@include karma();
-	font-size: 16px;
-	color: #000;
+	font-size: 24px;
+	color: transparent;
+
+	&:first-child {
+		background-image: url('../images/languages/en.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	&:nth-child(2n) {
+		background-image: url('../images/languages/gr.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	&:hover {
+		color: transparent;
+	}
+
+	&:active {
+		color: transparent;
+	}
 
 	&.active {
-		color: red;
+		color: transparent;
 	}
 }
 .top_text {
