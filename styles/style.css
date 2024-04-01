@@ -64,26 +64,25 @@ body {
   font-family: "Karma";
   cursor: text;
   font-size: 24px;
-  color: transparent;
+  cursor: pointer;
+  color: #000;
+  padding-top: 20px;
+  border-radius: 4px;
+  border: 1px solid black;
 }
 .language_select:first-child {
   background-image: url("../images/languages/en.png");
-  background-size: contain;
+  background-size: 100% 20px;
   background-repeat: no-repeat;
 }
 .language_select:nth-child(2n) {
   background-image: url("../images/languages/gr.png");
-  background-size: contain;
+  background-size: 100% 20px;
   background-repeat: no-repeat;
 }
-.language_select:hover {
-  color: transparent;
-}
-.language_select:active {
-  color: transparent;
-}
 .language_select.active {
-  color: transparent;
+  color: red;
+  border: 1px solid red;
 }
 
 .top_text {

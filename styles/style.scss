@@ -57,29 +57,26 @@ body {
 .language_select {
 	@include karma();
 	font-size: 24px;
-	color: transparent;
+	cursor: pointer;
+	color: #000;
+	padding-top: 20px;
+	border-radius: 4px;
+	border: 1px solid black;
 
 	&:first-child {
 		background-image: url('../images/languages/en.png');
-		background-size: contain;
+		background-size: 100% 20px;
 		background-repeat: no-repeat;
 	}
 	&:nth-child(2n) {
 		background-image: url('../images/languages/gr.png');
-		background-size: contain;
+		background-size: 100% 20px;
 		background-repeat: no-repeat;
 	}
 
-	&:hover {
-		color: transparent;
-	}
-
-	&:active {
-		color: transparent;
-	}
-
 	&.active {
-		color: transparent;
+		color: red;
+		border: 1px solid red;
 	}
 }
 .top_text {
