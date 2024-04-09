@@ -801,7 +801,7 @@ body {
   z-index: 20;
 }
 .my_button_prev.lower {
-  top: 520px;
+  top: 560px;
 }
 .my_button_prev.low {
   top: auto;
@@ -833,7 +833,7 @@ body {
   z-index: 20;
 }
 .my_button_next.lower {
-  top: 520px;
+  top: 560px;
 }
 .my_button_next.low {
   top: auto;
@@ -857,7 +857,7 @@ body {
   background-color: #000;
 }
 .swiper-pagination.lower {
-  top: 540px !important;
+  top: 580px !important;
 }
 
 .swiper_image {
@@ -878,6 +878,9 @@ body {
 }
 .swiper_image.auto {
   width: auto;
+}
+.swiper_image.lower {
+  margin-bottom: 150px;
 }
 .swiper_image.big {
   max-height: 250px;
@@ -900,7 +903,6 @@ body {
   position: absolute;
   bottom: 0;
 }
-
 .dog_right {
   max-width: 464px;
   width: 100%;

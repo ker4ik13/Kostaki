@@ -4,11 +4,11 @@ const scrollText = document.querySelector('.scroll_text');
 scrollButton.addEventListener('click', () => {
 	scrollText.classList.toggle('hidden');
 	// Continue
-	if (scrollButton.textContent === 'Να συνεχίσει...') {
+	if (scrollButton.textContent === 'ΣΥΝΕΧΙΣΕ...') {
 		// Roll up
-		scrollButton.textContent = 'Τυλίγω';
+		scrollButton.textContent = 'ΓΥΡΙΣΕ ΠΙΣΩ';
 	} else {
 		// Continue
-		scrollButton.textContent = 'Να συνεχίσει...';
+		scrollButton.textContent = 'ΣΥΝΕΧΙΣΕ...';
 	}
 });

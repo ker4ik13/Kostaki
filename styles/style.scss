@@ -788,7 +788,7 @@ body {
 	z-index: 20;
 
 	&.lower {
-		top: 520px;
+		top: 560px;
 	}
 
 	&.low {
@@ -820,7 +820,7 @@ body {
 	z-index: 20;
 
 	&.lower {
-		top: 520px;
+		top: 560px;
 	}
 
 	&.low {
@@ -846,7 +846,7 @@ body {
 	}
 
 	&.lower {
-		top: 540px !important;
+		top: 580px !important;
 	}
 }
 
@@ -871,6 +871,10 @@ body {
 		width: auto;
 	}
 
+	&.lower {
+		margin-bottom: 150px;
+	}
+
 	&.big {
 		max-height: 250px;
 		height: 100%;
@@ -892,6 +896,9 @@ body {
 	.paint_title {
 		position: absolute;
 		bottom: 0;
+	}
+
+	&.lower {
 	}
 }
 .dog_right {
